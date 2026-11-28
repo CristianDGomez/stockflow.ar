@@ -78,4 +78,1129 @@
     .brand-text h1 {
       font-size: 1.2rem;
       font-weight: 700;
-      letter-spacing:
+      letter-spacing: 0.2px;
+      color: var(--text);
+    }
+
+    .brand-text span {
+      font-size: 0.78rem;
+      color: var(--accent);
+      display: block;
+    }
+
+    /* FX Rate Widget */
+    .fx-control {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--surface-2);
+      border: 1px solid var(--accent);
+      padding: 8px 14px;
+      border-radius: var(--radius);
+    }
+
+    .fx-control label {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--accent);
+      white-space: nowrap;
+    }
+
+    .fx-input-wrap {
+      display: flex;
+      align-items: center;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 4px 10px;
+    }
+
+    .fx-input-wrap span {
+      color: var(--text-muted);
+      font-weight: 600;
+      margin-right: 4px;
+      font-size: 0.9rem;
+    }
+
+    .fx-input-wrap input {
+      width: 95px;
+      background: transparent;
+      border: none;
+      color: var(--text);
+      font-size: 1rem;
+      font-weight: 700;
+      outline: none;
+      text-align: right;
+    }
+
+    /* Toolbar Buttons */
+    .header-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    button, .btn-file {
+      cursor: pointer;
+      border: 1px solid var(--border);
+      background: var(--surface-2);
+      color: var(--text);
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+    }
+
+    button:hover, .btn-file:hover {
+      border-color: var(--accent);
+      background: #232a3b;
+    }
+
+    button.primary {
+      background: var(--accent);
+      color: #0b0d12;
+      border-color: var(--accent);
+    }
+
+    button.primary:hover {
+      background: var(--accent-hover);
+    }
+
+    button.success {
+      background: var(--success);
+      color: #06281e;
+      border-color: var(--success);
+    }
+
+    button.danger {
+      background: var(--danger-soft);
+      color: var(--danger);
+      border-color: rgba(239, 68, 68, 0.35);
+    }
+
+    button.sm {
+      padding: 4px 9px;
+      font-size: 0.78rem;
+    }
+
+    input[type="file"] {
+      display: none;
+    }
+
+    /* Main Container */
+    main {
+      max-width: 1400px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 24px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    /* KPI Grid */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 16px;
+    }
+
+    .kpi-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .kpi-title {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    .kpi-value {
+      font-size: 1.55rem;
+      font-weight: 800;
+      color: var(--text);
+    }
+
+    .kpi-sub {
+      font-size: 0.82rem;
+      color: var(--accent);
+      margin-top: 4px;
+      font-weight: 500;
+    }
+
+    /* Navigation Tabs */
+    .tabs {
+      display: flex;
+      gap: 8px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+      flex-wrap: wrap;
+    }
+
+    .tab-btn {
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text-muted);
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+    }
+
+    .tab-btn.active {
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-color: rgba(212, 163, 89, 0.35);
+    }
+
+    /* Panels */
+    .panel {
+      display: none;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .panel.active {
+      display: flex;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .card-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .card-header h2 {
+      font-size: 1.05rem;
+      font-weight: 700;
+    }
+
+    /* Filters & Forms */
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    input[type="text"], input[type="number"], select {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      outline: none;
+    }
+
+    input[type="text"]:focus, input[type="number"]:focus, select:focus {
+      border-color: var(--accent);
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 12px;
+      align-items: end;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .field label {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    /* Table */
+    .table-wrap {
+      overflow-x: auto;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.87rem;
+      text-align: left;
+    }
+
+    th {
+      background: var(--surface-2);
+      color: var(--text-muted);
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.74rem;
+      letter-spacing: 0.5px;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border);
+      white-space: nowrap;
+    }
+
+    td {
+      padding: 11px 14px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: middle;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .inline-num {
+      width: 78px;
+      padding: 5px 8px;
+      text-align: right;
+      font-weight: 600;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 999px;
+      font-size: 0.74rem;
+      font-weight: 700;
+    }
+
+    .badge-ok {
+      background: var(--success-soft);
+      color: var(--success);
+    }
+
+    .badge-low {
+      background: var(--danger-soft);
+      color: var(--danger);
+    }
+
+    .stock-controls {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .num-right {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+
+    .ars-price {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    /* Dropzone */
+    .dropzone {
+      border: 2px dashed var(--border);
+      border-radius: var(--radius);
+      padding: 18px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.86rem;
+      transition: all 0.2s ease;
+    }
+
+    .dropzone.dragover {
+      border-color: var(--accent);
+      background: var(--accent-soft);
+      color: var(--text);
+    }
+
+    /* POS Split */
+    .pos-layout {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 20px;
+    }
+
+    @media (max-width: 900px) {
+      .pos-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Toast */
+    #toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: var(--surface-2);
+      border: 1px solid var(--accent);
+      color: var(--text);
+      padding: 12px 18px;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      font-size: 0.88rem;
+      font-weight: 600;
+      opacity: 0;
+      transform: translateY(12px);
+      pointer-events: none;
+      transition: all 0.25s ease;
+      z-index: 100;
+    }
+
+    #toast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+      padding: 16px 24px;
+      text-align: center;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    footer span[contenteditable="true"] {
+      color: var(--accent);
+      font-weight: 700;
+      border-bottom: 1px dashed var(--accent);
+      padding: 0 4px;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <div class="brand-logo">SF</div>
+      <div class="brand-text">
+        <h1>StockFlow AR</h1>
+        <span>ERP &amp; POS Offline · Conversión USD → ARS</span>
+      </div>
+    </div>
+
+    <div class="fx-control">
+      <label for="fxRate">DÓLAR HOY (ARS):</label>
+      <div class="fx-input-wrap">
+        <span>$</span>
+        <input type="number" id="fxRate" value="1200" min="1" step="10" />
+      </div>
+    </div>
+
+    <div class="header-actions">
+      <button type="button" onclick="downloadTemplateCSV()">Plantilla CSV</button>
+      <label class="btn-file" for="csvFileInput">Cargar Excel (.csv)</label>
+      <input type="file" id="csvFileInput" accept=".csv" />
+      <button type="button" class="primary" onclick="exportInventoryCSV()">Exportar Stock</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- KPIs -->
+    <section class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-title">Capital Invertido (Costo AR +30%)</div>
+        <div class="kpi-value" id="kpiCostUSD">US$ 0.00</div>
+        <div class="kpi-sub" id="kpiCostARS">$ 0 ARS</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-title">Valuación Venta Proyectada</div>
+        <div class="kpi-value" id="kpiSaleARS">$ 0 ARS</div>
+        <div class="kpi-sub" id="kpiProfitUSD">Ganancia est.: US$ 0.00</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-title">Inventario Activo</div>
+        <div class="kpi-value" id="kpiUnits">0 un.</div>
+        <div class="kpi-sub" id="kpiModels">0 modelos cargados</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-title">Ventas Registradas &amp; Alertas</div>
+        <div class="kpi-value" id="kpiSalesARS">$ 0 ARS</div>
+        <div class="kpi-sub" id="kpiAlerts">0 productos en stock crítico</div>
+      </div>
+    </section>
+
+    <!-- Tabs -->
+    <nav class="tabs">
+      <button class="tab-btn active" data-tab="inventory" onclick="switchTab('inventory')">Inventario &amp; Precios</button>
+      <button class="tab-btn" data-tab="pos" onclick="switchTab('pos')">Punto de Venta / Movimientos</button>
+      <button class="tab-btn" data-tab="history" onclick="switchTab('history')">Historial de Operaciones</button>
+    </nav>
+
+    <!-- TAB 1: INVENTARIO -->
+    <section id="tab-inventory" class="panel active">
+      <div class="dropzone" id="dropzone">
+        Arrastrá y soltá aquí tu planilla <strong>.csv</strong> de Excel para importar productos o actualizar costos masivamente.
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h2>Agregar Nuevo Producto</h2>
+        </div>
+        <form class="form-grid" onsubmit="addProduct(event)">
+          <div class="field">
+            <label>SKU / Código</label>
+            <input type="text" id="newSku" placeholder="Ej: PERF-033" required />
+          </div>
+          <div class="field">
+            <label>Nombre del Producto</label>
+            <input type="text" id="newName" placeholder="Ej: Lattafa Khamrah 100ml" required />
+          </div>
+          <div class="field">
+            <label>Categoría</label>
+            <input type="text" id="newCat" value="Perfumería Importada" required />
+          </div>
+          <div class="field">
+            <label>Stock Inicial</label>
+            <input type="number" id="newStock" value="6" min="0" required />
+          </div>
+          <div class="field">
+            <label>Stock Mínimo</label>
+            <input type="number" id="newMin" value="2" min="0" required />
+          </div>
+          <div class="field">
+            <label>Costo Puesto AR (USD)</label>
+            <input type="number" id="newCost" step="0.01" min="0.01" placeholder="22.50" required />
+          </div>
+          <div class="field">
+            <label>Margen (%)</label>
+            <input type="number" id="newMargin" value="40" step="1" min="0" required />
+          </div>
+          <div class="field">
+            <button type="submit" class="primary">+ Agregar</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h2>Listado de Mercadería (Edición Directa)</h2>
+          <div class="filters">
+            <input type="text" id="searchInput" placeholder="Buscar por SKU o perfume..." oninput="renderInventory()" />
+            <select id="stockFilter" onchange="renderInventory()">
+              <option value="all">Todos los productos</option>
+              <option value="low">Solo stock crítico</option>
+            </select>
+            <button type="button" class="danger sm" onclick="resetDefaultCatalog()">Restaurar Catálogo Base (32 Perfumes)</button>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>SKU</th>
+                <th>Producto</th>
+                <th>Categoría</th>
+                <th>Stock</th>
+                <th>Stock Mín.</th>
+                <th>Estado</th>
+                <th class="num-right">Costo AR (USD)</th>
+                <th class="num-right">Margen %</th>
+                <th class="num-right">Venta (USD)</th>
+                <th class="num-right">Venta (ARS)</th>
+                <th class="num-right">Acción</th>
+              </tr>
+            </thead>
+            <tbody id="inventoryBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 2: PUNTO DE VENTA / MOVIMIENTOS -->
+    <section id="tab-pos" class="panel">
+      <div class="pos-layout">
+        <div class="card">
+          <div class="card-header">
+            <h2>Registrar Movimiento de Mercadería</h2>
+          </div>
+          <form class="form-grid" onsubmit="registerMovement(event)">
+            <div class="field">
+              <label>Tipo de Operación</label>
+              <select id="movType" onchange="updateMovementPreview()">
+                <option value="OUT">Salida / Venta (Descuenta Stock)</option>
+                <option value="IN">Ingreso / Reposición (Suma Stock)</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Producto</label>
+              <select id="movProduct" onchange="updateMovementPreview()"></select>
+            </div>
+            <div class="field">
+              <label>Cantidad (Unidades)</label>
+              <input type="number" id="movQty" value="1" min="1" oninput="updateMovementPreview()" required />
+            </div>
+            <div class="field">
+              <label>Cliente / Observación</label>
+              <input type="text" id="movNote" placeholder="Ej: Venta mostrador / Mayorista" />
+            </div>
+            <div class="field">
+              <button type="submit" class="success">Confirmar Operación</button>
+            </div>
+          </form>
+
+          <div id="movPreview" style="margin-top: 18px; padding: 14px; background: var(--bg); border-radius: 8px; border: 1px solid var(--border); font-size: 0.9rem;">
+            Seleccioná un producto para ver el cálculo en USD y ARS.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h2>Últimos Movimientos</h2>
+            <button type="button" class="sm" onclick="exportMovementsCSV()">Exportar Movimientos</button>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Fecha</th>
+                  <th>Tipo</th>
+                  <th>Producto</th>
+                  <th class="num-right">Cant.</th>
+                  <th class="num-right">Total ARS</th>
+                </tr>
+              </thead>
+              <tbody id="recentMovementsBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 3: HISTORIAL COMPLETO -->
+    <section id="tab-history" class="panel">
+      <div class="card">
+        <div class="card-header">
+          <h2>Auditoría Completa de Ingresos y Egresos</h2>
+          <div class="filters">
+            <button type="button" class="primary sm" onclick="exportMovementsCSV()">Descargar Reporte Excel (.csv)</button>
+            <button type="button" class="danger sm" onclick="clearMovements()">Limpiar Historial</button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Fecha y Hora</th>
+                <th>Operación</th>
+                <th>SKU</th>
+                <th>Producto</th>
+                <th class="num-right">Cantidad</th>
+                <th class="num-right">Cotización Dólar</th>
+                <th class="num-right">Total USD</th>
+                <th class="num-right">Total ARS</th>
+                <th>Detalle</th>
+              </tr>
+            </thead>
+            <tbody id="fullHistoryBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    StockFlow AR · Desarrollado por <span contenteditable="true" title="Hacé clic para editar el nombre">Cristian David Gomez Arcila</span> · Asistencia técnica: IA Colaborativa
+  </footer>
+
+  <div id="toast"></div>
+
+  <script>
+    const STORAGE_INV_KEY = "stockflow_ar_v2_inventory";
+    const STORAGE_MOV_KEY = "stockflow_ar_v2_movements";
+    const STORAGE_FX_KEY  = "stockflow_ar_v2_fx";
+
+    const DEFAULT_INVENTORY = [
+      { sku: "PERF-001", name: "Yum Yum", category: "Perfumería Importada", stock: 8, minStock: 2, costUSD: 22.10, margin: 40 },
+      { sku: "PERF-002", name: "Hawas for Him", category: "Perfumería Importada", stock: 5, minStock: 2, costUSD: 22.10, margin: 40 },
+      { sku: "PERF-003", name: "Hawas Fire", category: "Perfumería Importada", stock: 5, minStock: 2, costUSD: 19.50, margin: 40 },
+      { sku: "PERF-004", name: "Watani", category: "Perfumería Importada", stock: 4, minStock: 2, costUSD: 16.90, margin: 40 },
+      { sku: "PERF-005", name: "Bade'e Al Oud For Glory", category: "Perfumería Importada", stock: 5, minStock: 2, costUSD: 14.30, margin: 40 },
+      { sku: "PERF-006", name: "Sublime", category: "Perfumería Importada", stock: 4, minStock: 2, costUSD: 17.55, margin: 40 },
+      { sku: "PERF-007", name: "Bade'e Al Oud Honor & Glory", category: "Perfumería Importada", stock: 4, minStock: 2, costUSD: 18.20, margin: 40 },
+      { sku: "PERF-008", name: "Ghala", category: "Perfumería Importada", stock: 5, minStock: 2, costUSD: 13.00, margin: 40 },
+      { sku: "PERF-009", name: "Hawas for Her", category: "Perfumería Importada", stock: 4, minStock: 2, costUSD: 20.80, margin: 40 },
+      { sku: "PERF-010", name: "Namoos", category: "Perfumería Importada", stock: 4, minStock: 2, costUSD: 19.50, margin: 40 },
+      { sku: "PERF-011", name: "Khamrah Waha", category: "Perfumería Importada", stock: 5, minStock: 2, costUSD: 27.30, margin: 40 },
+      { sku: "PERF-012", name: "Scarlet", category: "Perfumería Importada", stock: 4, minStock: 2, costUSD: 16.90, margin: 40 },
+      { sku: "PERF-013", name: "Supremacy", category: "Perfumería Importada", stock: 6, minStock: 2, costUSD: 23.40, margin: 40 },
+      { sku: "PERF-014", name: "Liquid Brun", category: "Perfumería Importada", stock: 6, minStock: 2, costUSD: 26.00, margin: 40 },
+      { sku: "PERF-015", name: "Afeef", category: "Perfumería Importada", stock: 6, minStock: 2, costUSD: 41.60, margin: 40 },
+      { sku: "PERF-016", name: "Atheri", category: "Perfumería Importada", stock: 12, minStock: 2, costUSD: 26.00, margin: 40 },
+      { sku: "PERF-017", name: "Al Haramain Aqua Dubai", category: "Perfumería Importada", stock: 6, minStock: 2, costUSD: 28.60, margin: 40 },
+      { sku: "PERF-018", name: "Club de Nuit Woman", category: "Perfumería Importada", stock: 6, minStock: 2, costUSD: 19.50, margin: 40 },
+      { sku: "PERF-019", name: "9 PM Negro", category: "Perfumería Importada", stock: 6, minStock: 2, costUSD: 14.30, margin: 40 },
+      { sku: "PERF-020", name: "Vulcan", category: "Perfumería Importada", stock: 6, minStock: 2, costUSD: 24.70, margin: 40 },
+      { sku: "PERF-021", name: "Orientica Royal Amber", category: "Perfumería Importada", stock: 6, minStock: 2, costUSD: 19.50, margin: 40 },
+      { sku: "PERF-022", name: "Orientica Amber Rouge", category: "Perfumería Importada", stock: 6, minStock: 2, costUSD: 16.90, margin: 40 },
+      { sku: "PERF-023", name: "Mandarin Sky", category: "Perfumería Importada", stock: 6, minStock: 2, costUSD: 18.20, margin: 40 },
+      { sku: "PERF-024", name: "Al Wataniah Shagaf Al Ward EDP 100ml", category: "Perfumería Importada", stock: 6, minStock: 2, costUSD: 18.85, margin: 40 },
+      { sku: "PERF-025", name: "Lattafa Al Noble Safeer Verde EDP 100ml", category: "Perfumería Importada", stock: 6, minStock: 2, costUSD: 20.80, margin: 40 },
+      { sku: "PERF-026", name: "Lattafa Al Noble Wazer Fresco EDP 100ml", category: "Perfumería Importada", stock: 6, minStock: 2, costUSD: 20.80, margin: 40 },
+      { sku: "PERF-027", name: "Maison Nuit 2 Men 80ml", category: "Perfumería Importada", stock: 6, minStock: 2, costUSD: 21.45, margin: 40 },
+      { sku: "PERF-028", name: "Al Wataniah Durat Al Aroos EDP 85ml", category: "Perfumería Importada", stock: 6, minStock: 2, costUSD: 17.55, margin: 40 },
+      { sku: "PERF-029", name: "J.P. Silver Scent EDT 100ml", category: "Perfumería Importada", stock: 5, minStock: 2, costUSD: 22.10, margin: 40 },
+      { sku: "PERF-030", name: "Elephant Black M EDT 125ml", category: "Perfumería Importada", stock: 5, minStock: 2, costUSD: 25.35, margin: 40 },
+      { sku: "PERF-031", name: "Britney Fantasy EDP 100ml", category: "Perfumería Importada", stock: 5, minStock: 2, costUSD: 26.00, margin: 40 },
+      { sku: "PERF-032", name: "Lattafa Badee Al Fursan Negro EDP 90ml", category: "Perfumería Importada", stock: 5, minStock: 2, costUSD: 19.50, margin: 40 }
+    ];
+
+    let inventory = [];
+    let movements = [];
+
+    function init() {
+      const savedFx = localStorage.getItem(STORAGE_FX_KEY);
+      if (savedFx) document.getElementById("fxRate").value = savedFx;
+
+      const savedInv = localStorage.getItem(STORAGE_INV_KEY);
+      if (savedInv) {
+        try {
+          inventory = JSON.parse(savedInv);
+        } catch (e) {
+          inventory = structuredClone(DEFAULT_INVENTORY);
+        }
+      } else {
+        inventory = structuredClone(DEFAULT_INVENTORY);
+        saveInventory();
+      }
+
+      const savedMov = localStorage.getItem(STORAGE_MOV_KEY);
+      if (savedMov) {
+        try {
+          movements = JSON.parse(savedMov);
+        } catch (e) {
+          movements = [];
+        }
+      }
+
+      document.getElementById("fxRate").addEventListener("input", () => {
+        localStorage.setItem(STORAGE_FX_KEY, getFxRate());
+        renderAll();
+      });
+
+      setupFileUpload();
+      renderAll();
+    }
+
+    function getFxRate() {
+      const val = parseFloat(document.getElementById("fxRate").value);
+      return val > 0 ? val : 1200;
+    }
+
+    function saveInventory() {
+      localStorage.setItem(STORAGE_INV_KEY, JSON.stringify(inventory));
+    }
+
+    function saveMovements() {
+      localStorage.setItem(STORAGE_MOV_KEY, JSON.stringify(movements));
+    }
+
+    function formatUSD(n) {
+      return "US$ " + n.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    }
+
+    function formatARS(n) {
+      return "$ " + Math.round(n).toLocaleString("es-AR");
+    }
+
+    function showToast(msg) {
+      const t = document.getElementById("toast");
+      t.textContent = msg;
+      t.classList.add("show");
+      clearTimeout(window._toastTimer);
+      window._toastTimer = setTimeout(() => t.classList.remove("show"), 3000);
+    }
+
+    function switchTab(tabId) {
+      document.querySelectorAll(".tab-btn").forEach(b => b.classList.toggle("active", b.dataset.tab === tabId));
+      document.querySelectorAll(".panel").forEach(p => p.classList.toggle("active", p.id === "tab-" + tabId));
+    }
+
+    function renderAll() {
+      renderKPIs();
+      renderInventory();
+      populateProductSelect();
+      renderMovements();
+    }
+
+    function renderKPIs() {
+      const fx = getFxRate();
+      let totalCostUSD = 0;
+      let totalSaleUSD = 0;
+      let totalUnits = 0;
+      let lowCount = 0;
+
+      inventory.forEach(item => {
+        const saleUSD = item.costUSD * (1 + item.margin / 100);
+        totalCostUSD += item.costUSD * item.stock;
+        totalSaleUSD += saleUSD * item.stock;
+        totalUnits += item.stock;
+        if (item.stock <= item.minStock) lowCount++;
+      });
+
+      const totalSalesARS = movements
+        .filter(m => m.type === "OUT")
+        .reduce((acc, m) => acc + m.totalARS, 0);
+
+      document.getElementById("kpiCostUSD").textContent = formatUSD(totalCostUSD);
+      document.getElementById("kpiCostARS").textContent = formatARS(totalCostUSD * fx) + " ARS";
+      document.getElementById("kpiSaleARS").textContent = formatARS(totalSaleUSD * fx) + " ARS";
+      document.getElementById("kpiProfitUSD").textContent = "Ganancia est.: " + formatUSD(totalSaleUSD - totalCostUSD);
+      document.getElementById("kpiUnits").textContent = totalUnits + " un.";
+      document.getElementById("kpiModels").textContent = inventory.length + " modelos cargados";
+      document.getElementById("kpiSalesARS").textContent = formatARS(totalSalesARS) + " ARS";
+      document.getElementById("kpiAlerts").textContent = lowCount + " productos en stock crítico";
+    }
+
+    function renderInventory() {
+      const fx = getFxRate();
+      const query = document.getElementById("searchInput").value.toLowerCase().trim();
+      const filter = document.getElementById("stockFilter").value;
+      const tbody = document.getElementById("inventoryBody");
+      tbody.innerHTML = "";
+
+      const filtered = inventory.filter(item => {
+        const matchesText = item.sku.toLowerCase().includes(query) || item.name.toLowerCase().includes(query) || item.category.toLowerCase().includes(query);
+        const matchesStock = filter === "all" || item.stock <= item.minStock;
+        return matchesText && matchesStock;
+      });
+
+      filtered.forEach(item => {
+        const idx = inventory.findIndex(x => x.sku === item.sku);
+        const saleUSD = item.costUSD * (1 + item.margin / 100);
+        const saleARS = saleUSD * fx;
+        const isLow = item.stock <= item.minStock;
+
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+          <td><strong>${item.sku}</strong></td>
+          <td>${item.name}</td>
+          <td>${item.category}</td>
+          <td>
+            <div class="stock-controls">
+              <button type="button" class="sm" onclick="adjustStock(${idx}, -1)">-</button>
+              <strong>${item.stock}</strong>
+              <button type="button" class="sm" onclick="adjustStock(${idx}, 1)">+</button>
+            </div>
+          </td>
+          <td>
+            <input type="number" class="inline-num" value="${item.minStock}" min="0" onchange="updateField(${idx}, 'minStock', this.value)" />
+          </td>
+          <td>
+            <span class="badge ${isLow ? "badge-low" : "badge-ok"}">${isLow ? "Crítico" : "Óptimo"}</span>
+          </td>
+          <td class="num-right">
+            <input type="number" class="inline-num" step="0.01" min="0" value="${item.costUSD.toFixed(2)}" onchange="updateField(${idx}, 'costUSD', this.value)" />
+          </td>
+          <td class="num-right">
+            <input type="number" class="inline-num" step="1" min="0" value="${item.margin}" onchange="updateField(${idx}, 'margin', this.value)" />
+          </td>
+          <td class="num-right">${formatUSD(saleUSD)}</td>
+          <td class="num-right ars-price">${formatARS(saleARS)}</td>
+          <td class="num-right">
+            <button type="button" class="danger sm" onclick="deleteProduct(${idx})">Eliminar</button>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function adjustStock(idx, delta) {
+      if (inventory[idx].stock + delta < 0) return;
+      inventory[idx].stock += delta;
+      saveInventory();
+      renderAll();
+    }
+
+    function updateField(idx, field, rawVal) {
+      const val = parseFloat(rawVal);
+      if (isNaN(val) || val < 0) return;
+      inventory[idx][field] = field === "minStock" ? Math.round(val) : val;
+      saveInventory();
+      renderAll();
+      showToast("Producto actualizado");
+    }
+
+    function addProduct(e) {
+      e.preventDefault();
+      const sku = document.getElementById("newSku").value.trim().toUpperCase();
+      if (inventory.some(i => i.sku === sku)) {
+        showToast("Ese SKU ya existe en el inventario");
+        return;
+      }
+      inventory.unshift({
+        sku,
+        name: document.getElementById("newName").value.trim(),
+        category: document.getElementById("newCat").value.trim(),
+        stock: parseInt(document.getElementById("newStock").value, 10),
+        minStock: parseInt(document.getElementById("newMin").value, 10),
+        costUSD: parseFloat(document.getElementById("newCost").value),
+        margin: parseFloat(document.getElementById("newMargin").value)
+      });
+      saveInventory();
+      e.target.reset();
+      document.getElementById("newCat").value = "Perfumería Importada";
+      document.getElementById("newStock").value = "6";
+      document.getElementById("newMin").value = "2";
+      document.getElementById("newMargin").value = "40";
+      renderAll();
+      showToast("Producto agregado al inventario");
+    }
+
+    function deleteProduct(idx) {
+      const removed = inventory.splice(idx, 1)[0];
+      saveInventory();
+      renderAll();
+      showToast("Eliminado: " + removed.name);
+    }
+
+    function resetDefaultCatalog() {
+      inventory = structuredClone(DEFAULT_INVENTORY);
+      saveInventory();
+      renderAll();
+      showToast("Catálogo base de 32 perfumes restaurado");
+    }
+
+    /* POS & Movements */
+    function populateProductSelect() {
+      const sel = document.getElementById("movProduct");
+      const current = sel.value;
+      sel.innerHTML = inventory
+        .map((item, idx) => `<option value="${idx}">${item.sku} — ${item.name} (Stock: ${item.stock})</option>`)
+        .join("");
+      if (current && sel.options[current]) sel.value = current;
+      updateMovementPreview();
+    }
+
+    function updateMovementPreview() {
+      const idx = parseInt(document.getElementById("movProduct").value, 10);
+      const qty = parseInt(document.getElementById("movQty").value, 10) || 0;
+      const type = document.getElementById("movType").value;
+      const box = document.getElementById("movPreview");
+
+      if (isNaN(idx) || !inventory[idx]) {
+        box.textContent = "No hay productos disponibles.";
+        return;
+      }
+
+      const item = inventory[idx];
+      const fx = getFxRate();
+      const unitUSD = type === "OUT" ? item.costUSD * (1 + item.margin / 100) : item.costUSD;
+      const totalUSD = unitUSD * qty;
+      const totalARS = totalUSD * fx;
+
+      box.innerHTML = `
+        <strong>${type === "OUT" ? "Precio Venta" : "Costo Reposición"} Unitario:</strong> ${formatUSD(unitUSD)} (${formatARS(unitUSD * fx)} ARS)<br/>
+        <strong>Total Operación (${qty} un.):</strong> <span class="ars-price">${formatUSD(totalUSD)} / ${formatARS(totalARS)} ARS</span>
+      `;
+    }
+
+    function registerMovement(e) {
+      e.preventDefault();
+      const idx = parseInt(document.getElementById("movProduct").value, 10);
+      const qty = parseInt(document.getElementById("movQty").value, 10);
+      const type = document.getElementById("movType").value;
+      const note = document.getElementById("movNote").value.trim() || (type === "OUT" ? "Venta directa" : "Ingreso mercadería");
+
+      if (isNaN(idx) || !inventory[idx] || qty <= 0) return;
+
+      const item = inventory[idx];
+      if (type === "OUT" && item.stock < qty) {
+        showToast("Stock insuficiente (" + item.stock + " disponibles)");
+        return;
+      }
+
+      const fx = getFxRate();
+      const unitUSD = type === "OUT" ? item.costUSD * (1 + item.margin / 100) : item.costUSD;
+      const totalUSD = unitUSD * qty;
+      const totalARS = totalUSD * fx;
+
+      item.stock += type === "OUT" ? -qty : qty;
+
+      movements.unshift({
+        date: new Date().toLocaleString("es-AR"),
+        type,
+        sku: item.sku,
+        name: item.name,
+        qty,
+        fx,
+        totalUSD,
+        totalARS,
+        note
+      });
+
+      saveInventory();
+      saveMovements();
+      document.getElementById("movNote").value = "";
+      document.getElementById("movQty").value = "1";
+      renderAll();
+      showToast(type === "OUT" ? "Venta registrada" : "Ingreso registrado");
+    }
+
+    function renderMovements() {
+      const recentBody = document.getElementById("recentMovementsBody");
+      const fullBody = document.getElementById("fullHistoryBody");
+
+      recentBody.innerHTML = movements.slice(0, 8).map(m => `
+        <tr>
+          <td>${m.date}</td>
+          <td><span class="badge ${m.type === "OUT" ? "badge-ok" : "badge-low"}">${m.type === "OUT" ? "Venta" : "Ingreso"}</span></td>
+          <td>${m.name}</td>
+          <td class="num-right">${m.qty}</td>
+          <td class="num-right ars-price">${formatARS(m.totalARS)}</td>
+        </tr>
+      `).join("") || `<tr><td colspan="5" style="text-align:center;color:var(--text-muted)">Sin movimientos registrados aún.</td></tr>`;
+
+      fullBody.innerHTML = movements.map(m => `
+        <tr>
+          <td>${m.date}</td>
+          <td><span class="badge ${m.type === "OUT" ? "badge-ok" : "badge-low"}">${m.type === "OUT" ? "Salida / Venta" : "Ingreso"}</span></td>
+          <td><strong>${m.sku}</strong></td>
+          <td>${m.name}</td>
+          <td class="num-right">${m.qty}</td>
+          <td class="num-right">$ ${m.fx}</td>
+          <td class="num-right">${formatUSD(m.totalUSD)}</td>
+          <td class="num-right ars-price">${formatARS(m.totalARS)}</td>
+          <td>${m.note}</td>
+        </tr>
+      `).join("") || `<tr><td colspan="9" style="text-align:center;color:var(--text-muted)">Sin historial registrado.</td></tr>`;
+    }
+
+    function clearMovements() {
+      movements = [];
+      saveMovements();
+      renderAll();
+      showToast("Historial limpiado");
+    }
+
+    /* CSV Import / Export */
+    function setupFileUpload() {
+      const input = document.getElementById("csvFileInput");
+      const dz = document.getElementById("dropzone");
+
+      input.addEventListener("change", e => {
+        if (e.target.files[0]) processCSVFile(e.target.files[0]);
+        input.value = "";
+      });
+
+      dz.addEventListener("dragover", e => {
+        e.preventDefault();
+        dz.classList.add("dragover");
+      });
+
+      dz.addEventListener("dragleave", () => dz.classList.remove("dragover"));
+
+      dz.addEventListener("drop", e => {
+        e.preventDefault();
+        dz.classList.remove("dragover");
+        if (e.dataTransfer.files[0]) processCSVFile(e.dataTransfer.files[0]);
+      });
+    }
+
+    function processCSVFile(file) {
+      const reader = new FileReader();
+      reader.onload = e => {
+        const text = e.target.result;
+        const lines = text.split(/\r?\n/).filter(l => l.trim() !== "");
+        if (lines.length < 2) {
+          showToast("El archivo CSV está vacío");
+          return;
+        }
+
+        const sep = lines[0].includes(";") ? ";" : ",";
+        let updated = 0;
+
+        for (let i = 1; i < lines.length; i++) {
+          const cols = lines[i].split(sep).map(c => c.trim().replace(/^"|"$/g, ""));
+          if (cols.length < 6) continue;
+
+          const sku = cols[0].toUpperCase();
+          const name = cols[1];
+          const category = cols[2] || "General";
+          const stock = parseInt(cols[3], 10) || 0;
+          const minStock = parseInt(cols[4], 10) || 2;
+          const costUSD = parseFloat(cols[5].replace(",", ".")) || 0;
+          const margin = cols[6] ? parseFloat(cols[6].replace(",", ".")) : 40;
+
+          const existingIdx = inventory.findIndex(x => x.sku === sku);
+          if (existingIdx >= 0) {
+            inventory[existingIdx] = { sku, name, category, stock, minStock, costUSD, margin };
+          } else {
+            inventory.push({ sku, name, category, stock, minStock, costUSD, margin });
+          }
+          updated++;
+        }
+
+        saveInventory();
+        renderAll();
+        showToast("Importados/actualizados " + updated + " productos");
+      };
+      reader.readAsText(file, "UTF-8");
+    }
+
+    function triggerDownload(filename, csvContent) {
+      const blob = new Blob(["\uFEFF" + csvContent], { type: "text/csv;charset=utf-8;" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+
+    function downloadTemplateCSV() {
+      const header = "SKU,Producto,Categoria,Stock_Actual,Stock_Minimo,Costo_USD,Margen_Porcentaje\n";
+      const rows = inventory.map(i => `${i.sku},"${i.name}","${i.category}",${i.stock},${i.minStock},${i.costUSD.toFixed(2)},${i.margin}`).join("\n");
+      triggerDownload("plantilla_stockflow_ar.csv", header + rows);
+    }
+
+    function exportInventoryCSV() {
+      const fx = getFxRate();
+      const header = "SKU,Producto,Categoria,Stock_Actual,Stock_Minimo,Costo_AR_USD,Margen_%,Venta_USD,Venta_ARS,Total_Stock_ARS\n";
+      const rows = inventory.map(i => {
+        const saleUSD = i.costUSD * (1 + i.margin / 100);
+        const saleARS = Math.round(saleUSD * fx);
+        const totalARS = saleARS * i.stock;
+        return `${i.sku},"${i.name}","${i.category}",${i.stock},${i.minStock},${i.costUSD.toFixed(2)},${i.margin},${saleUSD.toFixed(2)},${saleARS},${totalARS}`;
+      }).join("\n");
+      triggerDownload("inventario_valuado_stockflow_ar.csv", header + rows);
+    }
+
+    function exportMovementsCSV() {
+      const header = "Fecha,Tipo,SKU,Producto,Cantidad,Dolar_ARS,Total_USD,Total_ARS,Detalle\n";
+      const rows = movements.map(m => `"${m.date}",${m.type},${m.sku},"${m.name}",${m.qty},${m.fx},${m.totalUSD.toFixed(2)},${Math.round(m.totalARS)},"${m.note}"`).join("\n");
+      triggerDownload("movimientos_stockflow_ar.csv", header + rows);
+    }
+
+    init();
+  </script>
+</body>
+</html>
